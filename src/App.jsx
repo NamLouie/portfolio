@@ -365,8 +365,7 @@ function App() {
                 <h3 className="text-2xl font-bold text-white mb-4">Peer-to-Peer Support & Mentoring Platform</h3>
                 <img src="assets/Landing.png" alt="Landing Page" className="w-full h-100 rounded-2xl mb-4" />
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  A comprehensive web application designed to connect students and professionals for peer support and mentoring. 
-                  Features include user matching, messaging system, and progress tracking.
+                  The project is designed to connect students within the CSIT program for peer-to-peer support and mentoring. First- and second-year students will act as mentees, while third- and fourth-year students will serve as mentors. Mentors can share specific topics to teach, and mentees can send mentoring requests. Both parties need to accept before starting a session. After each mentoring session, both the mentor and mentee will create a report about the topic discussed and the lessons learned. These reports will then be reviewed and validated by the admin to ensure authenticity. The system also provides notifications for both mentors and mentees—such as when an invite is sent, when a session ends, or when a report has been validated.
                 </p>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center text-gray-300">
@@ -381,6 +380,11 @@ function App() {
                     <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
                     <span>CI/CD deployment using GitHub Actions</span>
                   </div>
+                  <div className="flex items-center text-gray-300">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
+                  <span>Secure authentication with OTP verification</span>
+                </div>
+
                 </div>
               </div>
 
