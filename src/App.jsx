@@ -123,7 +123,7 @@ function App() {
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h2 className="text-2xl sm:text-4xl font-bold text-white">Technical Skills</h2>
+              <h2 className="text-2xl sm:text-4xl font-bold text-white">Skills/Tools</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-8">
               {/* JavaScript */}
@@ -231,6 +231,20 @@ function App() {
                     <span className="text-white font-black text-lg">M</span>
                   </div>
                   <h3 className="text-center font-bold text-white text-lg">Manual testing</h3>
+                </div>
+              </div>
+
+              {/* Agile  */}
+              <div className="group/skill relative overflow-hidden">
+                <div className="bg-gradient-to-br from-gray-900/40 to-green-100/20 p-8 rounded-2xl border border-green-700/30 hover:border-green-500/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-green-700/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-gray-900 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                    <img 
+                          src="/assets/agile.png" 
+                          alt="bootstrap logo" 
+                          className="w-9 h-9 object-contain" 
+                        />   
+                  </div>
+                  <h3 className="text-center font-bold text-white text-lg">Agile Methodology</h3>
                 </div>
               </div>
 
@@ -432,7 +446,7 @@ function App() {
                 </div>
                 <p className="text-gray-300 mb-3 text-lg">University of San Agustin</p>
                 <p className="text-gray-300">
-                  Relevant coursework in software engineering, testing methodologies, and quality assurance
+                  Relevant coursework in included UI/UX Design, Networking, Database Management, Web Development, Data Analysis, and Cybersecurity.
                 </p>
               </div>
               
