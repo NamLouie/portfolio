@@ -108,7 +108,7 @@ function App() {
               <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-white">About Me</h2>
             </div>
             <p className="text-gray-300 text-base sm:text-xl leading-relaxed">
-               I’m a fresh graduate from the University of San Agustin with experience in QA, web development, and UI/UX. I’ve worked with Playwright and Cucumber for test automation and have skills in manual testing, bug tracking, and usability improvements. I enjoy building user-friendly applications and collaborating with teams in agile environments.
+               I’m a Bachelor of Science in Information Technology fresh graduate from the University of San Agustin with experience in QA, web development, and UI/UX. I’ve worked with Playwright and Cucumber for test automation and have skills in manual testing, bug tracking, and usability improvements. I enjoy building user-friendly applications and collaborating with teams in agile environments.
             </p>
           </section>
 
