@@ -86,7 +86,7 @@ function App() {
         </header>
 
         {/* Right Side Content - Now takes full available width */}
-        <main className="flex-1 p-4 sm:p-6 lg:p-8 w-full lg:ml-96">
+        <main className="flex-1 p-4 sm:p-6 lg:p-8 w-full lg:ml-96 bg-gradient-to-br from-slate-800 via-gray-900 to-black/80">
           {/* Hero Section */}
           <section className="mb-8 sm:mb-12 text-center">
             <div className="relative">
@@ -126,35 +126,38 @@ function App() {
               <h2 className="text-2xl sm:text-4xl font-bold text-white">Technical Skills</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-8">
-             <div className="group/skill relative overflow-hidden">
-              <div className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 p-8 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
-                  {/* JavaScript SVG Icon */}
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
-                  </svg>
-                </div>
-                <h3 className="text-center font-bold text-white text-lg">JavaScript</h3>
-              </div>
-            </div>
-
-            <div className="group/skill relative overflow-hidden">
-              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 p-8 rounded-2xl border border-green-500/30 hover:border-green-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
-                  {/* Simple test/check icon representing BDD testing */}
-                   <img 
-                          src="/assets/cucumber.png" 
-                          alt="Cucumber logo" 
-                          className="w-9 h-9 object-contain" 
-                        />     
-                </div>
-                <h3 className="text-center font-bold text-white text-lg">Cucumber</h3>
-              </div>
-            </div>
-
+              {/* JavaScript */}
               <div className="group/skill relative overflow-hidden">
-                <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 p-8 rounded-2xl border border-blue-500/30 hover:border-blue-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                <div className="bg-gradient-to-br from-slate-800/40 to-yellow-500/20 p-8 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-slate-800 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                    {/* JavaScript SVG Icon */}
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                    </svg>
+                  </div>
+                  <h3 className="text-center font-bold text-white text-lg">JavaScript</h3>
+                </div>
+              </div>
+
+              {/* Cucumber */}
+              <div className="group/skill relative overflow-hidden">
+                <div className="bg-gradient-to-br from-gray-800/40 to-green-500/20 p-8 rounded-2xl border border-green-500/30 hover:border-green-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-gray-800 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                    {/* Simple test/check icon representing BDD testing */}
+                     <img 
+                            src="/assets/cucumber.png" 
+                            alt="Cucumber logo" 
+                            className="w-9 h-9 object-contain" 
+                          />     
+                  </div>
+                  <h3 className="text-center font-bold text-white text-lg">Cucumber</h3>
+                </div>
+              </div>
+
+              {/* Playwright */}
+              <div className="group/skill relative overflow-hidden">
+                <div className="bg-gradient-to-br from-black/40 to-blue-500/20 p-8 rounded-2xl border border-blue-500/30 hover:border-blue-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-black rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
                           <img 
                           src="/assets/playwright-seeklogo.png" 
                           alt="Playwright logo" 
@@ -165,9 +168,10 @@ function App() {
                 </div>
               </div>
 
+              {/* Jira */}
               <div className="group/skill relative overflow-hidden">
-                <div className="bg-gradient-to-br from-cyan-500/20 to-blue-500/20 p-8 rounded-2xl border border-cyan-500/30 hover:border-cyan-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                <div className="bg-gradient-to-br from-slate-900/40 to-cyan-500/20 p-8 rounded-2xl border border-cyan-500/30 hover:border-cyan-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-slate-900 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
                     <img 
                           src="/assets/jira.png" 
                           alt="jira logo" 
@@ -178,9 +182,10 @@ function App() {
                 </div>
               </div>
 
+              {/* Figma */}
               <div className="group/skill relative overflow-hidden">
-                <div className="bg-gradient-to-br from-cyan-500/20 to-blue-500/20 p-8 rounded-2xl border border-cyan-500/30 hover:border-cyan-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                <div className="bg-gradient-to-br from-gray-900/40 to-purple-500/20 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-gray-900 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
                     <img 
                           src="/assets/figma.png" 
                           alt="figma logo" 
@@ -191,9 +196,10 @@ function App() {
                 </div>
               </div>
 
+              {/* CI/CD */}
               <div className="group/skill relative overflow-hidden">
-                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                <div className="bg-gradient-to-br from-black/40 to-pink-500/20 p-8 rounded-2xl border border-pink-500/30 hover:border-pink-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-black rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
                     <img 
                           src="/assets/devops.png" 
                           alt="devops logo" 
@@ -204,9 +210,10 @@ function App() {
                 </div>
               </div>
 
+              {/* Github */}
               <div className="group/skill relative overflow-hidden">
-                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                <div className="bg-gradient-to-br from-slate-800/40 to-gray-900/20 p-8 rounded-2xl border border-gray-900/30 hover:border-gray-700/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-gray-900/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-gray-700 to-slate-800 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
                     <img 
                           src="/assets/github-sign.png" 
                           alt="github logo" 
@@ -217,18 +224,20 @@ function App() {
                 </div>
               </div>
 
+              {/* Manual testing */}
               <div className="group/skill relative overflow-hidden">
-                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                <div className="bg-gradient-to-br from-gray-900/40 to-green-700/20 p-8 rounded-2xl border border-green-700/30 hover:border-green-500/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-green-700/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-700 to-gray-900 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
                     <span className="text-white font-black text-lg">M</span>
                   </div>
                   <h3 className="text-center font-bold text-white text-lg">Manual testing</h3>
                 </div>
               </div>
 
+              {/* Bootstrap */}
               <div className="group/skill relative overflow-hidden">
-                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
+                <div className="bg-gradient-to-br from-slate-900/40 to-blue-900/20 p-8 rounded-2xl border border-blue-900/30 hover:border-blue-700/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-900 to-slate-900 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
                     <img 
                           src="/assets/bootstrap.png" 
                           alt="bootstrap logo" 
@@ -362,11 +371,6 @@ function App() {
                     <span>CI/CD deployment using GitHub Actions</span>
                   </div>
                 </div>
-                <div className="flex space-x-4">
-                  <a href="#" className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 text-center">
-                    View Project
-                  </a>
-                </div>
               </div>
 
               {/* Project 2 - Test Automation Framework */}
@@ -446,8 +450,7 @@ function App() {
               <h2 className="text-2xl sm:text-4xl font-bold text-white">Let's Connect</h2>
             </div>
             <p className="text-gray-300 text-base sm:text-xl mb-8 sm:mb-12 text-center max-w-3xl mx-auto leading-relaxed">
-              I'm always interested in new opportunities and collaborations. 
-              Feel free to reach out if you'd like to discuss quality assurance, testing automation, or any other tech topics.
+             I’m always open to new opportunities—feel free to reach out if you’d like to connect!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
               <a
@@ -486,11 +489,29 @@ function App() {
                 <span className="relative z-10 flex items-center justify-center">
                   <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
-                  </svg>
+                </svg>
                   GitHub
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity"></div>
               </a>
+              <a href="https://www.facebook.com/deticti"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-600 hover:to-blue-700 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/50 border border-blue-700"
+              >
+                <span className="relative z-10 flex items-center justify-center">
+                  <svg
+                    className="w-5 h-5 mr-3"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22.675 0h-21.35C.596 0 0 .592 0 1.323v21.354C0 23.408.596 24 1.325 24H12.82v-9.294H9.692V11.08h3.128V8.413c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.918c-1.505 0-1.797.715-1.797 1.763v2.309h3.59l-.467 3.626h-3.123V24h6.116C23.403 24 24 23.408 24 22.677V1.323C24 .592 23.403 0 22.675 0z" />
+                  </svg>
+                  Facebook
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+              </a>
+
             </div>
           </section>
         </main>
