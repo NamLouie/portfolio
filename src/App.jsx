@@ -11,14 +11,14 @@ function App() {
         <div className="absolute bottom-0 left-1/2 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
-      <div className="relative z-10 flex">
+      <div className="relative z-10 flex flex-col lg:flex-row">
         {/* Left Sidebar Header */}
-        <header className="w-full lg:w-96 bg-black/40 backdrop-blur-xl shadow-2xl min-h-screen lg:fixed left-0 top-0 border-r border-gray-700/50">
-          <div className="p-6 lg:p-8 h-full flex flex-col">
+        <header className="w-full lg:w-96 bg-black/40 backdrop-blur-xl shadow-2xl min-h-screen lg:fixed left-0 top-0 border-r border-gray-700/50 z-20">
+          <div className="p-4 sm:p-6 lg:p-8 h-full flex flex-col">
             {/* Profile Picture - Centered */}
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-6 sm:mb-8">
               <div className="relative">
-                <div className="w-44 h-44 rounded-2xl bg-gradient-to-br from-blue-400 via-purple-500 to-cyan-400 p-1 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-300">
+                <div className="w-32 h-32 sm:w-44 sm:h-44 rounded-2xl bg-gradient-to-br from-blue-400 via-purple-500 to-cyan-400 p-1 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-300">
                   <div className="w-full h-full rounded-2xl bg-gray-800 flex items-center justify-center">
                     <img 
                       src="/assets/profile.jpg" 
@@ -27,26 +27,26 @@ function App() {
                     />
                   </div>
                 </div>
-                <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-400 rounded-full border-4 border-black animate-pulse"></div>
+                <div className="absolute -bottom-2 -right-2 w-5 h-5 sm:w-6 sm:h-6 bg-green-400 rounded-full border-4 border-black animate-pulse"></div>
               </div>
             </div>
             
             {/* Name - Below Profile Picture */}
-            <div className="text-center mb-10">
-              <h1 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white mb-3 animate-pulse">
+            <div className="text-center mb-6 sm:mb-10">
+              <h1 className="text-2xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white mb-2 sm:mb-3 animate-pulse">
                 Rommel Louie Sumande
               </h1>
               <div className="relative">
-                <p className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 font-bold mb-4">
+                <p className="text-lg sm:text-xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 font-bold mb-2 sm:mb-4">
                   Software QA Engineer
                 </p>
-                <div className="mx-auto w-20 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
+                <div className="mx-auto w-16 sm:w-20 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
               </div>
             </div>
 
             {/* Navigation Menu */}
-            <nav className="mb-10">
-              <ul className="space-y-3">
+            <nav className="mb-6 sm:mb-10">
+              <ul className="space-y-2 sm:space-y-3">
                 {['About', 'Skills', 'Experience','Projects','Education','Contact'].map((item, index) => (
                   <li key={item}>
                     <a href={`#${item.toLowerCase()}`} className="group flex items-center px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300 backdrop-blur-sm border border-transparent hover:border-white/20">
@@ -59,51 +59,55 @@ function App() {
             </nav>
 
             {/* Quick Contact Info */}
-            <div className="space-y-4 mt-auto">
-              <div className="flex items-center text-gray-300 hover:text-white transition-colors p-3 rounded-xl hover:bg-white/5">
+            <div className="space-y-3 sm:space-y-4 mt-auto">
+              <div className="flex flex-wrap items-center text-gray-300 hover:text-white transition-colors p-3 rounded-xl hover:bg-white/5">
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
                   <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium">louiesumande08@gmail.com</span>
+                <span className="text-xs sm:text-sm font-medium break-all">{/* ensures email wraps */}
+                  louiesumande08@gmail.com
+                </span>
               </div>
-              <div className="flex items-center text-gray-300 hover:text-white transition-colors p-3 rounded-xl hover:bg-white/5">
+              <div className="flex flex-wrap items-center text-gray-300 hover:text-white transition-colors p-3 rounded-xl hover:bg-white/5">
                 <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
                   <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium">Iloilo City</span>
+                <span className="text-xs sm:text-sm font-medium break-all">{/* ensures address wraps */}
+                  Iloilo City
+                </span>
               </div>
             </div>
           </div>
         </header>
 
         {/* Right Side Content - Now takes full available width */}
-        <main className="flex-1 p-6 lg:p-8 w-full lg:ml-96">
+        <main className="flex-1 p-4 sm:p-6 lg:p-8 w-full lg:ml-96">
           {/* Hero Section */}
-          <section className="mb-12 text-center">
+          <section className="mb-8 sm:mb-12 text-center">
             <div className="relative">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 mb-6">
-            Portfolio
+              <h2 className="text-2xl sm:text-4xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 mb-4 sm:mb-6">
+                Portfolio
               </h2>
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-25"></div>
             </div>
           </section>
 
           {/* About Me Section */}
-          <section id="about" className="bg-black/20 backdrop-blur-xl rounded-3xl shadow-2xl p-10 mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+          <section id="about" className="bg-black/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-10 mb-8 sm:mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
+            <div className="flex items-center mb-6 sm:mb-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mr-4 sm:mr-6 shadow-lg group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">About Me</h2>
+              <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-white">About Me</h2>
             </div>
-            <p className="text-gray-300 text-xl leading-relaxed">
+            <p className="text-gray-300 text-base sm:text-xl leading-relaxed">
                Detail-oriented Software QA Engineer with hands-on experience in manual testing, UI/UX design,
               and web application development. Proficient in Playwright and Cucumber frameworks, with a solid
               foundation in test case creation, functional testing, and CI/CD deployment. Adept at identifying
@@ -112,16 +116,16 @@ function App() {
           </section>
 
           {/* Technical Skills Section */}
-          <section id="skills" className="bg-black/20 backdrop-blur-xl rounded-3xl shadow-2xl p-10 mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+          <section id="skills" className="bg-black/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-10 mb-8 sm:mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
+            <div className="flex items-center mb-6 sm:mb-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mr-4 sm:mr-6 shadow-lg group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h2 className="text-4xl font-bold text-white">Technical Skills</h2>
+              <h2 className="text-2xl sm:text-4xl font-bold text-white">Technical Skills</h2>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-8">
              <div className="group/skill relative overflow-hidden">
               <div className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 p-8 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/20">
                 <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
@@ -164,7 +168,7 @@ function App() {
               <div className="group/skill relative overflow-hidden">
                 <div className="bg-gradient-to-br from-cyan-500/20 to-blue-500/20 p-8 rounded-2xl border border-cyan-500/30 hover:border-cyan-400/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20">
                   <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-xl group-hover/skill:rotate-12 transition-transform">
-                     <img 
+                    <img 
                           src="/assets/jira.png" 
                           alt="jira logo" 
                           className="w-9 h-9 object-contain" 
@@ -238,16 +242,16 @@ function App() {
           </section>
 
           {/* Experience Section */}
-          <section id="experience" className="bg-black/20 backdrop-blur-xl rounded-3xl shadow-2xl p-10 mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+          <section id="experience" className="bg-black/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-10 mb-8 sm:mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
+            <div className="flex items-center mb-6 sm:mb-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mr-4 sm:mr-6 shadow-lg group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v6.586l-1.293-1.293A1 1 0 0115 12h-2V8H7v4H5a1 1 0 00-.707.293L3 13.586V8a2 2 0 012-2h1z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h2 className="text-4xl font-bold text-white">Experience</h2>
+              <h2 className="text-2xl sm:text-4xl font-bold text-white">Experience</h2>
             </div>
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               <div className="relative pl-8">
                 <div className="absolute left-0 top-0 w-4 h-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full shadow-lg"></div>
                 <div className="absolute left-2 top-4 w-0.5 h-full bg-gradient-to-b from-blue-400/50 to-transparent"></div>
@@ -314,17 +318,17 @@ function App() {
           </section>
 
           {/* My Projects Section */}
-          <section id="projects" className="bg-black/20 backdrop-blur-xl rounded-3xl shadow-2xl p-10 mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+          <section id="projects" className="bg-black/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-10 mb-8 sm:mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
+            <div className="flex items-center mb-6 sm:mb-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mr-4 sm:mr-6 shadow-lg group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h2 className="text-4xl font-bold text-white">My Projects</h2>
+              <h2 className="text-2xl sm:text-4xl font-bold text-white">My Projects</h2>
             </div>
             
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2">
               {/* Project 1 - Peer-to-Peer Support Platform */}
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:bg-white/10 group/project">
                 <div className="flex items-center justify-between mb-6">
@@ -407,16 +411,16 @@ function App() {
           </section>
 
           {/* Education Section */}
-          <section id="education" className="bg-black/20 backdrop-blur-xl rounded-3xl shadow-2xl p-10 mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+          <section id="education" className="bg-black/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-10 mb-8 sm:mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
+            <div className="flex items-center mb-6 sm:mb-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mr-4 sm:mr-6 shadow-lg group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                 </svg>
               </div>
-              <h2 className="text-4xl font-bold text-white">Education</h2>
+              <h2 className="text-2xl sm:text-4xl font-bold text-white">Education</h2>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 hover:bg-white/10">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                   <h3 className="text-2xl font-bold text-white">Bachelor's Degree in Information Technology</h3>
@@ -432,20 +436,20 @@ function App() {
           </section>
 
           {/* Contact Section */}
-          <section id="contact" className="bg-black/20 backdrop-blur-xl rounded-3xl shadow-2xl p-10 border border-white/10 hover:border-white/20 transition-all duration-500 group">
-            <div className="flex items-center justify-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+          <section id="contact" className="bg-black/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-10 border border-white/10 hover:border-white/20 transition-all duration-500 group">
+            <div className="flex flex-col sm:flex-row items-center justify-center mb-6 sm:mb-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mr-4 sm:mr-6 shadow-lg group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h2 className="text-4xl font-bold text-white">Let's Connect</h2>
+              <h2 className="text-2xl sm:text-4xl font-bold text-white">Let's Connect</h2>
             </div>
-            <p className="text-gray-300 text-xl mb-12 text-center max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-300 text-base sm:text-xl mb-8 sm:mb-12 text-center max-w-3xl mx-auto leading-relaxed">
               I'm always interested in new opportunities and collaborations. 
               Feel free to reach out if you'd like to discuss quality assurance, testing automation, or any other tech topics.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
               <a
                 href="mailto:your.email@example.com"
                 className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/50"
