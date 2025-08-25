@@ -13,7 +13,7 @@ function App() {
       <div className="relative z-10 flex">
         {/* Left Sidebar Header */}
         <header className="w-full lg:w-96 bg-black/40 backdrop-blur-xl shadow-2xl min-h-screen lg:fixed left-0 top-0 border-r border-gray-700/50">
-  <div className="p-6 lg:p-8 h-full flex flex-col">
+      <div className="p-6 lg:p-8 h-full flex flex-col">
             {/* Profile Picture - Centered */}
             <div className="flex justify-center mb-8">
               <div className="relative">
@@ -64,7 +64,7 @@ function App() {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium">your.email@example.com</span>
+                <span className="text-sm font-medium">louiesumande08@gmail.com</span>
               </div>
               <div className="flex items-center text-gray-300 hover:text-white transition-colors p-3 rounded-xl hover:bg-white/5">
                 <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center mr-4 shadow-lg">
@@ -72,7 +72,7 @@ function App() {
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span className="text-sm font-medium">Your Location</span>
+                <span className="text-sm font-medium">Iloilo City</span>
               </div>
             </div>
           </div>
@@ -101,9 +101,10 @@ function App() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">About Me</h2>
             </div>
             <p className="text-gray-300 text-xl leading-relaxed">
-              I'm a dedicated QA engineer with a passion for ensuring software quality and reliability. 
-              My expertise spans from manual testing to advanced automation frameworks, always focusing 
-              on creating robust testing solutions that improve product quality and user satisfaction.
+               Detail-oriented Software QA Engineer with hands-on experience in manual testing, UI/UX design,
+              and web application development. Proficient in Playwright and Cucumber frameworks, with a solid
+              foundation in test case creation, functional testing, and CI/CD deployment. Adept at identifying
+              bugs, enhancing usability, and collaborating in agile development teams.
             </p>
           </section>
 
@@ -237,7 +238,11 @@ function App() {
                     </div>
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <p className="text-gray-300">Joined beta testing of Goozam Mobile App</p>
+                      <p className="text-gray-300">Joined beta testing for Goozam Mobile App</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <p className="text-gray-300">Redesigned and researched user experience improvements for specific sections of the Prometheus and WARP Website, enhancing usability and visual design </p>
                     </div>
                   </div>
                 </div>
@@ -264,7 +269,117 @@ function App() {
                       <div className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <p className="text-gray-300">Deployed the web application using CI/CD pipeline Github Actions</p>
                     </div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <p className="text-gray-300">Performed functional testing throughout the development phase to ensure core features worked as intended</p>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* My Projects Section */}
+          <section id="projects" className="bg-black/20 backdrop-blur-xl rounded-3xl shadow-2xl p-10 mb-12 border border-white/10 hover:border-white/20 transition-all duration-500 group">
+            <div className="flex items-center mb-8">
+              <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <h2 className="text-4xl font-bold text-white">My Projects</h2>
+            </div>
+            
+            <div className="grid gap-8 md:grid-cols-2">
+              {/* Project 1 - Peer-to-Peer Support Platform */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:bg-white/10 group/project">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-xl group-hover/project:scale-110 transition-transform">
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                    </svg>
+                  </div>
+                  <div className="flex space-x-2">
+                    <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">Laravel</span>
+                    <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm font-medium">JavaScript</span>
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Peer-to-Peer Support & Mentoring Platform</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  A comprehensive web application designed to connect students and professionals for peer support and mentoring. 
+                  Features include user matching, messaging system, and progress tracking.
+                </p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
+                    <span>Built with Laravel backend and MySQL database</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
+                    <span>Responsive frontend using Bootstrap and JavaScript</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
+                    <span>CI/CD deployment using GitHub Actions</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
+                    <span>Comprehensive testing and quality assurance</span>
+                  </div>
+                </div>
+                <div className="flex space-x-4">
+                  <a href="#" className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 text-center">
+                    View Project
+                  </a>
+                  <a href="#" className="flex-1 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 border border-white/20 hover:border-white/30 text-center">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+
+              {/* Project 2 - Test Automation Framework */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:bg-white/10 group/project">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-xl group-hover/project:scale-110 transition-transform">
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="flex space-x-2">
+                    <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm font-medium">Playwright</span>
+                    <span className="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-sm font-medium">Cucumber</span>
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Automated Testing Framework</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  A comprehensive test automation framework built with Playwright and Cucumber BDD. 
+                  Implements CI/CD integration for continuous testing and quality assurance.
+                </p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+                    <span>Cross-browser testing with Playwright</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+                    <span>BDD approach using Cucumber for test scenarios</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+                    <span>Integration with GitHub Actions CI/CD</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+                    <span>Detailed reporting and test analytics</span>
+                  </div>
+                </div>
+                <div className="flex space-x-4">
+                  <a href="#" className="flex-1 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 text-center">
+                    View Project
+                  </a>
+                  <a href="#" className="flex-1 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 border border-white/20 hover:border-white/30 text-center">
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -338,7 +453,7 @@ function App() {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-20 transition-opacity"></div>
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/NamLouie"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden bg-gradient-to-r from-gray-900 to-black hover:from-gray-800 hover:to-gray-900 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-black/50 border border-gray-700"
