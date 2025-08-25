@@ -47,7 +47,7 @@ function App() {
             {/* Navigation Menu */}
             <nav className="mb-10">
               <ul className="space-y-3">
-                {['About', 'Skills', 'Experience', 'Education', 'Contact'].map((item, index) => (
+                {['About', 'Skills', 'Experience','Projects','Education','Contact'].map((item, index) => (
                   <li key={item}>
                     <a href={`#${item.toLowerCase()}`} className="group flex items-center px-4 py-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300 backdrop-blur-sm border border-transparent hover:border-white/20">
                       <span className="w-2 h-2 bg-blue-400 rounded-full mr-4 opacity-0 group-hover:opacity-100 transition-opacity"></span>
@@ -234,7 +234,6 @@ function App() {
                   <h3 className="text-center font-bold text-white text-lg">Bootstrap</h3>
                 </div>
               </div>
-
             </div>
           </section>
 
@@ -340,6 +339,7 @@ function App() {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Peer-to-Peer Support & Mentoring Platform</h3>
+                <img src="assets/Landing.png" alt="Landing Page" className="w-full h-100 rounded-2xl mb-4" />
                 <p className="text-gray-300 mb-6 leading-relaxed">
                   A comprehensive web application designed to connect students and professionals for peer support and mentoring. 
                   Features include user matching, messaging system, and progress tracking.
@@ -357,17 +357,10 @@ function App() {
                     <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
                     <span>CI/CD deployment using GitHub Actions</span>
                   </div>
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                    <span>Comprehensive testing and quality assurance</span>
-                  </div>
                 </div>
                 <div className="flex space-x-4">
                   <a href="#" className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 text-center">
                     View Project
-                  </a>
-                  <a href="#" className="flex-1 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 border border-white/20 hover:border-white/30 text-center">
-                    GitHub
                   </a>
                 </div>
               </div>
@@ -385,10 +378,10 @@ function App() {
                     <span className="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-sm font-medium">Cucumber</span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Automated Testing Framework</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Internship QA Documentation</h3>
+                <img src="assets/QA_internship.png" alt="QA Internship Project" className="w-full h-100 rounded-2xl mb-4" />
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  A comprehensive test automation framework built with Playwright and Cucumber BDD. 
-                  Implements CI/CD integration for continuous testing and quality assurance.
+                  For my internship QA project, I documented detailed test scenarios and test cases in Notion to showcase my work. The automation scripts built with Playwright and Cucumber were confidential, but the documentation highlights my process in structuring tests, defining expected results, and ensuring traceability.
                 </p>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center text-gray-300">
@@ -397,23 +390,16 @@ function App() {
                   </div>
                   <div className="flex items-center text-gray-300">
                     <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
-                    <span>BDD approach using Cucumber for test scenarios</span>
+                    <span>Documented test cases and scenarios using spreadsheets</span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
-                    <span>Integration with GitHub Actions CI/CD</span>
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
-                    <span>Detailed reporting and test analytics</span>
+                    <span>Performed manual testing</span>
                   </div>
                 </div>
                 <div className="flex space-x-4">
-                  <a href="#" className="flex-1 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 text-center">
+                  <a href="https://www.notion.so/Internship-Prometheus-25a5086a787380f39f83d2bfa9d784a8?source=copy_link" className="flex-1 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 text-center">
                     View Project
-                  </a>
-                  <a href="#" className="flex-1 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 border border-white/20 hover:border-white/30 text-center">
-                    GitHub
                   </a>
                 </div>
               </div>
