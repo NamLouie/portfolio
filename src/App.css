@@ -1,0 +1,16 @@
+/* Custom styles for QA Portfolio */
+.transition-colors {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom focus styles for accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
