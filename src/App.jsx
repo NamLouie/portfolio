@@ -442,7 +442,7 @@ function App() {
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 hover:bg-white/10">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                  <h3 className="text-2xl font-bold text-white">Bachelor's Degree in Information Technology</h3>
+                  <h3 className="text-2xl font-bold text-white">Bachelor of Science in Information Technology</h3>
                   <span className="text-purple-400 font-bold text-lg bg-purple-400/20 px-4 py-1 rounded-full">2021 - 2025</span>
                 </div>
                 <p className="text-gray-300 mb-3 text-lg">University of San Agustin</p>
